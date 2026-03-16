@@ -2,8 +2,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
+
 # proje dosyalarını kopyala
 COPY . .
+
 
 # uygulamayı publish et
 RUN dotnet publish -c Release -o /app/publish
