@@ -33,7 +33,7 @@ app.MapGet("/weatherforecast", () =>
 
     return forecast;
 })
-.WithName("GetWeatherForecast")
+.WithName("GetWeatherForecast");
 
 app.Run();
 
