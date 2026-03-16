@@ -15,7 +15,6 @@ WORKDIR /app
 # build stage'den publish edilen dosyaları kopyala
 COPY --from=build /app/publish .
 
-
 # uygulama portu
 EXPOSE 8080
 
