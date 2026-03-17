@@ -18,5 +18,6 @@ COPY --from=build /app/publish .
 # uygulama portu
 EXPOSE 8080
 
+
 # uygulamayı başlat
 ENTRYPOINT ["dotnet", "Neues Projekt.dll"]
